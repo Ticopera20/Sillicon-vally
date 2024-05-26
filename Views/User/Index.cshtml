@@ -1,13 +1,16 @@
 @model IEnumerable<UserManagement.Models.User>
 
-<h1>Usuarios</h1>
+<h1>Lista de Usuarios</h1>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Id</th>
+            <th>ID</th>
             <th>Nombre</th>
-            <th>Acciones</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Avatar</th>
+            <th>Detalles</th>
         </tr>
     </thead>
     <tbody>
@@ -15,14 +18,20 @@
         {
             <tr>
                 <td>@user.Id</td>
-                <td><img src="@user.Avatar"></td>
-                <td>@user.First_Name @user.Last_Name </td>
+                <td>@user.First_Name</td>
+                <td>@user.Last_Name</td>
+                <td>@user.Email</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@user.Id">Detalles</a>
+                    <img src="@user.Avatar" alt="Avatar" width="50" height="50"/>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@user.Id" class="btn btn-info">Ver Detalles</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
 
-<a asp-action="Create" class="btn btn-primary">Agregar Usuario</a>
+<div>
+    <a asp-action="Create" class="btn btn-dark-blue">Agregar Usuario</a>
+</div>
