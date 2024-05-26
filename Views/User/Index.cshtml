@@ -1,0 +1,27 @@
+@model IEnumerable<UserManagement.Models.User>
+
+<h1>Usuarios</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.First_Name @user.Last_Name </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@user.Id">Detalles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Agregar Usuario</a>

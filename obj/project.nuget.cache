@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C7bOXCTsfABXb6QR8BDTzpbIkyF+HKuFucUtPtKakJh3zWQvEkgrqAHo+oHX37tkAAO3ljoxRUZFdFNq7pknag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Practica4\\UserManagement\\UserManagement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
